@@ -3,13 +3,13 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-python@v1
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: '3.6'
-      - uses: actions/setup-node@v1
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
         with:
-          node-version: '10.x'
+          node-version: '16.x'
       - run: python -m pip install --upgrade pip
       - run: pip install jupyterlab
       - run: jlpm
@@ -18,13 +18,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-python@v1
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: '3.6'
-      - uses: actions/setup-node@v1
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
         with:
-          node-version: '10.x'
+          node-version: '16.x'
       - run: python -m pip install --upgrade pip
       - run: pip install jupyterlab
       - run: jlpm run build
@@ -34,7 +34,7 @@ jobs:
       - run: jlpm run test
       - name: upload screenshots
         if: failure()
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v4
         with:
           name: screenshots
           path: screenshots
