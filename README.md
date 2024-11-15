@@ -1,3 +1,5 @@
+Updated with help of AI
+
 **This repository has been archived by lack of maintainers.**
 
 # JupyterLab Data Explorer
