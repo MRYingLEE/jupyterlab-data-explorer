@@ -10,11 +10,11 @@
   "homepage": "https://github.com/jupyterlab/jupyterlab-data-explorer",
   "bugs": {
     "url": "https://github.com/jupyterlab/jupyterlab-data-explorer/issues"
-  ],
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/jupyterlab/jupyterlab-data-explorer.git"
-  ],
+  },
   "license": "BSD-3-Clause",
   "author": "Project Jupyter",
   "files": [
